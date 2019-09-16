@@ -3,7 +3,9 @@
 Variables.
 
 tab - pass the child class.
+
 info - pass the parent class.
+
 tabContent - we pass the description of the tab.
 
 Example.
