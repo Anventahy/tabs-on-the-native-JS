@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
     'use strict';
 
-let tab = document.querySelectorAll('.info-header-tab'), // получаем дочерний классы
-    info = document.querySelector('.info-header'), // получаем родителя
-    tabContent = document.querySelectorAll('.info-tabcontent'); // карточки
+let tab = document.querySelectorAll('<child class>'), 
+    info = document.querySelector('<parent>'), 
+    tabContent = document.querySelectorAll('<tab description>');
 
     function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
@@ -24,7 +24,7 @@ let tab = document.querySelectorAll('.info-header-tab'), // получаем д�
 
     info.addEventListener('click', function(event) {
         let target = event.target;
-        if (target && target.classList.contains('info-header-tab')) {
+        if (target && target.classList.contains('i<child class>')) {
             for (let i = 0; i < tab.length; i++) {
                 if (target == tab[i]) {
                     hideTabContent(0);
